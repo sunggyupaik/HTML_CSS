@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>4. 폼 관련 태그들 - 2</title>
+    </head>
+    <body>
+        <h1>여름 방학 특강 신청</h1>
+        <fieldset>
+            <legend>수강과목</legend>
+            <label>영어회화(초급) <input type="text" value="오전 9:00~11:00" readonly></label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>신청자</legend>
+            <ul>
+                <label>이름 <input type="text" name="name" autofocus required></label><br>
+                <label>학번 <input type="text" name="id" placeholder="하이픈없이 입력" ></label><br>
+                
+                학과
+                <select name="major">
+                    <option value="computer">컴퓨터공학과</option>
+                    <option value="physic">체육학과</option>
+                </select>
+            </ul> 
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>교재주문</legend>
+            <label>교재<input type="number" value="1" name="교재"></inputy></label><br>
+            <label>워크시트<input type="number" value="1" name="worksheet"></label><br>
+            <label>단체주문<input type="number" value="10" min="10" max="30" step="10"></label>
+        </fieldset>
+        <hr>
+
+        <h1>회원 가입을 환영합니다.</h1>
+        <fieldset>
+            <legend>회원가입</legend>
+            <label>아이디:<input type="text" minlength="3" maxlength="10"></label>
+            <small style="color:red;">3~10자리 이내의 영문과 숫자</small>
+        </fieldset>
+        <hr>
+
+        <label name="major" id="major">학과</label>
+        <select id="major">
+            <optgroup label="공과대학">
+                <option value="archi">건축공학과</option>
+                <option value="mechanic">기계공학과</option>
+            </optgroup>
+            <optgroup label="인문대학">
+                <option value="history">사학과</option>
+                <option value="lang">어문학부</option>
+            </optgroup>
+        </select>
+        <hr>
+
+        <fieldset>
+            <legend>수강 과목을 선택하세요</legend>
+            <input type="text" id="interest" list="choices">
+            <datalist id="choices">
+                <option value="grammar" label="문법"></option>
+                <option value="voca" label="어휘"></option>
+            </datalist>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <textarea name="intro" cols="60" rows="5">
+            열심히 사는 사람들의 손을 잡아주는 곳 - 이지스퍼블링 
+            우리는 책을 사랑한다.
+            </textarea>
+        </fieldset>
+        <hr>
+
+        <form>
+            <button type="submit" class="subm">
+                <img src="images/jerry.png" alt="">전송하기
+            </button>
+        </form>
+        <hr>
+
+        <fieldset>
+            <legend></legend>
+            10초 남음<progress value="50" max="60"></progress>
+        </fieldset>
+        <hr>
+
+        <ul>
+            <li>
+                점유율 0.8 <meter value="0.8"></meter>
+            </li>
+            <li>
+                트래픽초과<meter min="1024" max="10240" low="2048" high="8192" value="9216"></meter>
+            </li>
+        </ul>
+    </body>
+</html>
