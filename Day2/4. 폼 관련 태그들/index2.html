@@ -27,7 +27,7 @@
         <hr>
         <fieldset>
             <legend>교재주문</legend>
-            <label>교재<input type="number" value="1" name="교재"></inputy></label><br>
+            <label>교재<input type="number" placeholder="1" value="3" name="교재"></inputy></label><br>
             <label>워크시트<input type="number" value="1" name="worksheet"></label><br>
             <label>단체주문<input type="number" value="10" min="10" max="30" step="10"></label>
         </fieldset>
@@ -93,5 +93,27 @@
                 트래픽초과<meter min="1024" max="10240" low="2048" high="8192" value="9216"></meter>
             </li>
         </ul>
+
+        <hr>
+        <h1>프런트엔드 개발자 지원서</h1>
+        <p>HTML CSS Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다</p>
+        <hr>
+        <p><b>개인정보</b></p>
+        <blockquote>
+            <label>이름<input type="text" placehoder="공백없이 입력하세요"></label><br>
+            <label>연락처<input type="text"></label>
+        </blockquote>
+
+        <p><b>지원분야</b></p>
+        <blockquote>
+            <label><input type="radio" name="field" name="web">웹 퍼블리싱</label><br>
+            <label><input type="radio" name="field" name="app">웹 애플리케이션 개발</label><br>
+            <label><input type="radio" name="field" name="setting">개발 환경 개선</label>
+        </blockquote>
+
+        <p><b>지원동기</b></p>
+        <textarea name="motivation" placeholder="본사 지원 동기를 간략히 써 주세요." rows="5" cols="60"></textarea><br>
+        <input type="submit" value="접수하기">
+        <input type="reset" value="다시 쓰기">
     </body>
 </html>
