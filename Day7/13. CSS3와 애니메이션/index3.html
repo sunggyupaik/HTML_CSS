@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .container{
+                float:left;
+                width:300px;
+                height:300px;
+                margin: 30px 50px;
+                border: 1px solid black;
+                padding : 20px;
+            }
+
+            .box{
+                width:300px;
+                height:100%;
+                background-color:blueviolet;
+                transform:rotateY(135deg);
+            }
+
+            #back1{
+                backface-visibility:hidden;
+            }
+
+            #back2{
+                backface-visibility:visible;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box" id="back1"><h1>BACK</h1></div>
+        </div>
+
+        <div class="container">
+            <div class="box" id="back2"><h1>BACK</h1></div>
+
+        </div>
+    </body>
+</html>
